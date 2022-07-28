@@ -8,8 +8,8 @@ public class Factory {
 	static {
 		try {
 			Class.forName("org.postgresql.Driver");
-			String URL = "jdbc:postgresql://ec2-52-204-157-26.compute-1.amazonaws.com:5432/d8u7m23tgtampr?sslmode=require";
-			c = DriverManager.getConnection(URL,"qdvzpdjxnuxkka","747bd14fb0de048853d43024a97d4f9bb28bf790623b5cbad327b09828f96214");
+			String URL = "jdbc:postgresql://ec2-44-206-89-185.compute-1.amazonaws.com:5432/d1gmpl6spdejue?sslmode=require";
+			c = DriverManager.getConnection(URL,"wwduvzviucxmjo","cb1a4199debb4c9013ceb76656b721e713b32123466d24edf8d69a2bc80abb2");
 
 		}catch(ClassNotFoundException | SQLException e) {
 			System.out.println("ERRO NO CONSTRUTOR DA CLASSE FACTORY!");

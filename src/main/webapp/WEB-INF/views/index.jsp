@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.List, model.Produto, DAO.ProdutosDao"%>
+<%@ page import="java.util.List, model.Produto"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:directive.page isELIgnored="false"/>
 <!doctype html>
@@ -105,7 +105,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <c:set var="listaProdutos" value="${ProdutosDao().getProdutos()}" />
+
                     <c:forEach items="${listaProdutos}" var="produto">
                         <tr>
                             <td class="table-row">${produto.idProd}</td>
